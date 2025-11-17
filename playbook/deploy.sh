@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker rm -f centos7 ubuntu fedora 2>/dev/null
+#docker rm -f centos7 ubuntu fedora 2>/dev/null
 
 docker run -d --name centos7 centos:7 tail -f /dev/null
 docker run -d --name ubuntu python:3.9-slim tail -f /dev/null  
