@@ -8,3 +8,7 @@
       - name: Print fact
         debug:
           msg: "{{ some_fact }}"
+      - name: Print name
+        debug:
+          msg: "name: {{ name }}"
+        when: "'fed' in group_names"
